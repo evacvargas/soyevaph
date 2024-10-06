@@ -14,10 +14,10 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen"> 
       <Navbar />
       <section
-        className="relative h-screen flex flex-col items-center justify-center bg-cover bg-center"
+        className="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
         style={{
           backgroundImage: `url(${Wallpaper.src})`,
           clipPath: "ellipse(100% 90% at 50% 0%)",
@@ -58,7 +58,7 @@ export default function Home() {
           <Link href="/miniShoots/christmas" className="mt-6">
             <Button
               bg="#FFF"
-              title="RESERVA TU LUGAR"
+              title="QUIERO MÁS DETALLES"
               size="md"
               shadow={true}
               border={true}
@@ -81,7 +81,7 @@ export default function Home() {
       </div>
       </section>
 
-      <footer className="p-6 bg-[#f1f1f1] flex items-center justify-center">
+      <footer className="p-6 bg-[#f1f1f1] flex items-center justify-center h-auto">
         <div className="flex space-x-8">
           <Link href="https://www.instagram.com/soyevaph/" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2">
             <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: '#a6a6a6' }} />
@@ -99,6 +99,6 @@ export default function Home() {
           </Link>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
