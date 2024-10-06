@@ -111,6 +111,7 @@ export default function Navidad() {
             alt="Imagen de Navidad"
             width={400}
             height={400}
+            layout="responsive"
           />
         </div>
       </section>

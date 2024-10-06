@@ -49,7 +49,7 @@ export default function Cumples() {
               },
               {
                 name: "Feliz Cumpleaños 2",
-                description: "30 MINUTOS DE SESIÓN\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA (Puede traer su torta y props)",
+                description: "30 MINUTOS DE SESIÓN\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA (Puede traer su torta y props)",
                 cost: "40 USD",
               },
               {
@@ -59,8 +59,13 @@ export default function Cumples() {
               },
               {
                 name: "Feliz Cumpleaños 4",
-                description: "1 hora DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 2 POSTALES IMPRESAS + 1 Mini Cake Sencilla + Pequeña Deco",
-                cost: "75 USD",
+                description: "1 hora DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA + 1 Mini Cake Sencilla + Pequeña Deco",
+                cost: "70 USD",
+              },
+              {
+                name: "Feliz Cumpleaños extra",
+                description: "1 HORA DE SESIÓN\n20 IMAGENES DIGITALES + 1 POLAROID IMPRESA (Puede traer su torta y props)",
+                cost: "45 USD",
               },
             ].map((packageOption) => (
               <div className="flex flex-col sm:flex-row items-start mb-4" key={packageOption.name}>
