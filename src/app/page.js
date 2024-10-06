@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import Wallpaper from "../../public/bg2.jpg";
+import ProfilePic from "../../public/profile.jpg";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -55,7 +56,7 @@ export default function Home() {
 
           <div className="relative w-full h-64 md:h-[400px] shadow-xl">
             <Image
-              src={"/profile.jpg"}
+              src={ProfilePic.src}
               alt="Profile"
               layout="fill"
               objectFit="cover"
