@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Logo from "/public/logo.png";
-import bdayPic from "/public/birthdays.jpg";
-import bdayPicI from "/public/birthdaysII.jpg";
+import Logo from "/logo.png";
+import bdayPic from "/birthdays.jpg";
+import bdayPicI from "/birthdaysII.jpg";
 import Link from "next/link";
 
 export default function Cumples() {
