@@ -56,7 +56,7 @@ export default function Home() {
 
           <div className="relative w-full h-64 md:h-[400px] shadow-xl">
             <Image
-              src={ProfilePic.src}
+              src={ProfilePic}
               alt="Profile"
               layout="fill"
               objectFit="cover"

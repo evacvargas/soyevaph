@@ -1,4 +1,7 @@
 import Image from "next/image";
+import Logo from "../../../../public/logo.png";
+import xmasPic from "../../../../public/xmas.jpg";
+import xmas from "../../../../public/xmasInfo.jpg";
 import Link from "next/link";
 
 export default function Navidad() {
@@ -11,13 +14,13 @@ export default function Navidad() {
   return (
     <div className="min-h-screen flex flex-col gap-8">
       <div className="w-full flex justify-center py-4 bg-[#ffebe7]">
-        <Image src={"/logo.png"} alt="logo" width={150} height={150} />
+        <Image src={Logo} alt="logo" width={150} height={150} />
       </div>
 
       <section className="w-full mx-auto p-10 bg-[#ffebe7]">
         <div className="relative w-full flex justify-center mb-10">
           <Image
-            src={"/xmas.jpg"}
+            src={xmasPic}
             alt="Mini Sesión Navidad"
             className="rounded-full"
             width="100%"
@@ -104,7 +107,7 @@ export default function Navidad() {
         
         <div className="flex-none w-1/3">
           <Image
-            src={"/xmasInfo.jpg"}
+            src={xmas}
             alt="Imagen de Navidad"
             width={400}
             height={400}
