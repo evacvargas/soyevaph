@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import Wallpaper from "../../public/bg2.jpg";
-import ProfilePic from "../../public/profile.jpg";
-import XmasPic from "../../public/xmasx.jpg";
-import Logo from "../../public/logo.png"
+import profilePic from "../../public/profile.jpg";
+import xmasPic from "../../public/xmasx.jpg";
+import logo from "../../public/logo.png"
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -25,7 +25,7 @@ export default function Home() {
       >
         <div>
           <div className="absolute top-0 left-0 p-4">
-            <Image src={Logo} alt="logo" width={250} height={250} />
+            <Image src={logo} alt="logo" width={250} height={250} />
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="relative w-full h-64 md:h-[400px] shadow-xl">
             <Image
-              src={ProfilePic}
+              src={profilePic}
               alt="Profile"
               layout="fill"
               objectFit="cover"
@@ -110,7 +110,7 @@ export default function Home() {
 
           <div className="w-full h-auto">
             <Image
-              src={XmasPic}
+              src={xmasPic}
               alt="Profile"
               layout="responsive"
               objectFit="contain"
