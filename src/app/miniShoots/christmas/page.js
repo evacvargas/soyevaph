@@ -1,7 +1,7 @@
 import Image from "next/image";
-import Logo from "../../../../public/logo.png";
-import xmasPic from "../../../../public/xmas.jpg";
-import xmas from "../../../../public/xmasInfo.jpg";
+import Logo from "/public/logo.png";
+import xmasPic from "/public/xmas.jpg";
+import xmas from "/public/xmasInfo.jpg";
 import Link from "next/link";
 
 export default function Navidad() {
