@@ -2,6 +2,8 @@
 import Image from "next/image";
 import Wallpaper from "../../public/bg2.jpg";
 import ProfilePic from "../../public/profile.jpg";
+import XmasPic from "../../public/xmasPic0448.jpg";
+import Logo from "../../public/logo.png"
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -23,7 +25,7 @@ export default function Home() {
       >
         <div>
           <div className="absolute top-0 left-0 p-4">
-            <Image src={"/logo.png"} alt="logo" width={250} height={250} />
+            <Image src={Logo} alt="logo" width={250} height={250} />
           </div>
         </div>
       </section>
@@ -108,7 +110,7 @@ export default function Home() {
 
           <div className="w-full h-auto">
             <Image
-              src={"/xmas.jpg"}
+              src={XmasPic}
               alt="Profile"
               layout="responsive"
               objectFit="contain"

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Logo from "../../../../public/logo.png";
-import xmasPic from "../../../../public/xmas.jpg";
-import xmas from "../../../../public/xmasInfo.jpg";
+import XmasPic from "../../../../public/xmasPic0448.jpg";
+import XmasPicII from "../../../../public/xmasPic0460.jpg";
 import Link from "next/link";
 
 export default function Navidad() {
@@ -20,7 +20,7 @@ export default function Navidad() {
       <section className="w-full mx-auto p-10 bg-[#ffebe7]">
         <div className="relative w-full flex justify-center mb-10">
           <Image
-            src={xmasPic}
+            src={XmasPic}
             alt="Mini Sesión Navidad"
             className="rounded-full"
             width="100%"
@@ -48,7 +48,7 @@ export default function Navidad() {
         </p>
       </section>
 
-      <section className="bg-white p-12 flex gap-8">
+      <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">
         <div className="flex-1">
           <h1 className="font-serif text-5xl text-[#323336] mb-4">
             HO HO HO!!!! Paquetes Fotográficos
@@ -107,7 +107,7 @@ export default function Navidad() {
         
         <div className="flex-none w-1/3">
           <Image
-            src={xmas}
+            src={XmasPicII}
             alt="Imagen de Navidad"
             width={400}
             height={400}
