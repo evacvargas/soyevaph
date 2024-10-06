@@ -12,6 +12,36 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      keyframes: {
+        sparkle: {
+          '0%': { 
+            color: '#a6a6a6', 
+            textShadow: '0 0 0 rgba(166, 166, 166, 0)' 
+          },
+          '25%': { 
+            color: '#d3d3d3', 
+            textShadow: '0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)' 
+          },
+          '50%': { 
+            color: '#fff', 
+            textShadow: '0 0 20px rgba(166, 166, 166, 1), 0 0 30px rgba(166, 166, 166, 0.9)' 
+          },
+          '75%': { 
+            color: '#d3d3d3', 
+            textShadow: '0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)' 
+          },
+          '100%': { 
+            color: '#a6a6a6', 
+            textShadow: '0 0 0 rgba(166, 166, 166, 0)' 
+          },
+        },
+      },
+      animation: {
+        sparkle: 'sparkle 2s ease-in-out infinite',
+      },
+      zIndex: {
+        '1': '1',
+      },
     },
   },
   plugins: [],
