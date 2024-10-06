@@ -116,7 +116,6 @@ export default function Home() {
               objectFit="contain"
               className="rounded-full shadow-2xl"
               width={800} height={800}
-              style={{ height: "auto", width: "100%" }}
             />
           </div>
         </div>
