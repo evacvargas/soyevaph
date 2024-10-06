@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Imagen from '../../public/wedding-cover.jpg';
+// import Imagen from '../../public/wedding-cover.jpg';
 
 
 export default function Card({img, msg, title}){

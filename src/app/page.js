@@ -1,8 +1,8 @@
 "use client";
 import Image from "next/image";
-import Wallpaper from "../../public/bg2.JPG";
-import ProfilePic from "../../public/profile.JPG";
-import xmasPic from "../../public/xmas.JPG";
+import Wallpaper from "../../public/bg2.jpg";
+import ProfilePic from "../../public/profile.jpg";
+import xmasPic from "../../public/xmas.jpg";
 import Logo from "../../public/logo.png";
 import Button from "@/components/Button";
 import Link from "next/link";

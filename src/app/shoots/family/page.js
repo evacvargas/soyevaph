@@ -1,7 +1,7 @@
 // import Image from "next/image";
 import Logo from "../../../../public/logo.png";
-import bdayPic from "../../../../public/birthdays.JPG";
-import bdayPicI from "../../../../public/birthdaysII.JPG";
+// import bdayPic from "../../../../public/birthdays.JPG";
+// import bdayPicI from "../../../../public/birthdaysII.JPG";
 import Link from "next/link";
 
 export default function Profesionales() {
