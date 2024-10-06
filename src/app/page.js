@@ -25,7 +25,7 @@ export default function Home() {
       >
         <div>
           <div className="absolute top-0 left-0 p-4">
-            <Image src={Logo} alt="logo" width={250} height={250} />
+            <Image src={"/logo.png"} alt="logo" width={250} height={250} />
           </div>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
 
           <div className="relative w-full h-64 md:h-[400px] shadow-xl">
             <Image
-              src={ProfilePic}
+              src={"/profile.jpg"}
               alt="Profile"
               layout="fill"
               objectFit="cover"
@@ -110,11 +110,12 @@ export default function Home() {
 
           <div className="w-full h-auto">
             <Image
-              src={xmasPic}
+              src={"/xmas.jpg"}
               alt="Profile"
               layout="responsive"
               objectFit="contain"
               className="rounded-full shadow-2xl"
+              width={800} height={800}
               style={{ height: "auto", width: "100%" }}
             />
           </div>
