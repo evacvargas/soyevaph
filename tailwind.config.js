@@ -6,7 +6,9 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
+    extend: {clipPath: {
+      'polygon-shape': 'polygon(0 0, 100% 10%, 100% 90%, 0 100%)',
+    },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -44,5 +46,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-clip-path'),
+  ],
 };

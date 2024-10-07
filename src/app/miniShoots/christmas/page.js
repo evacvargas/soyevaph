@@ -83,9 +83,13 @@ export default function Navidad() {
                   </h1>
                   <p>
                     {ticket.description.split("@bryanninor")[0]}
-                    <a href={ticket.ig} target="_blank" rel="noopener noreferrer" className={`font-extrabold ${ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>
-                      @bryanninor
-                    </a>
+                    {ticket.ig && (
+                      <>
+                        <a href={ticket.ig} target="_blank" rel="noopener noreferrer" className={`font-extrabold ${ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>
+                          @bryanninor
+                        </a>
+                      </>
+                    )}
                     <br />
                     <span className={`font-extrabold ${ticket.name === "Ticket AZUL" ? "text-[#97d8f4]" : ticket.name === "Ticket PLATA" ? "text-[#b8b8b8]" : ticket.name === "Ticket ORO" ? "text-[#e6a638]" : ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>{ticket.cost}</span>
                   </p>
