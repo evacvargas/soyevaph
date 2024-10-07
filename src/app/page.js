@@ -52,19 +52,29 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-center w-full md:w-1/2">
             <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
-              <span className="font-bold text-red-700">2023</span> fue un
-              bonito año en el set, un ensayo y error, un experimento que
-              resultó ser una experiencia inolvidable. Por lo que, 2024 no podía
-              pasar desapercibido. He pensado a detalle lo que quiero ofrecer y
-              espero que estén tan emocionados como yo...
+              Siempre he sido la persona de: <span className="text-red-700 font-bold">  &quot;HEY, una foto&quot;...</span>
             </p>
-            <div className="flex flex-col gap-3">
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+              Y por supuesto todo comenzó como un lindo pasatiempo.
+            </p>
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+              Pero como me esfuerzo constantemente por mejorar... quise convertirlo en una profesión.
+            </p>
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+              Cada sesión es una oportunidad para perfeccionar mi oficio, 
+              siempre con la convicción de que mi mejor trabajo está aún por llegar.
+              Una cosa permanece constante: <span className="text-red-700">mi amor inquebrantable por la fotografía. </span>
+            </p>
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+            No es solo un trabajo, es mi pasión, mi vocación y la mejor carrera que 
+            jamás podría haber imaginado.
+            </p>
+            <div className="flex flex-col gap-3 italic">
               <p className="text-[#a6a6a6]">
-                Ya tenemos <span className="font-bold text-red-700">PRE VENTA</span>
-                25% de Descuento en nuestros tickets
+                &quot;Lo que la memoria olvida, lo que el tiempo se lleva...
               </p>
-              <p className="font-bold text-red-700">
-                HASTA EL 30 DE OCTUBRE
+              <p className="text-red-700 font-extrabold">
+                ... La fotografía lo rescata&quot;.
               </p>
             </div>
           </div>
