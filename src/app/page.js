@@ -5,7 +5,7 @@ import profilePic from "../../public/profile.jpg";
 import xmasPic from "../../public/xmasx.jpg";
 import logo from "../../public/logo.png";
 import logoBryan from "../../public/logobryan.png"
-import logoAlex from "../../public/logocapturaalex.png"
+import logoAlex from "../../public/logoalex.png"
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -35,8 +35,8 @@ export default function Home() {
       </section>
 
       <section className="p-14 flex flex-col gap-10 min-h-screen items-center text-center md:text-left">
-        <h1 className="text-xl text-[#a6a6a6]">
-          Bienvenido/a, soy <span className="font-extrabold text-red-700">EVA VARGAS</span>
+        <h1 className="text-4xl text-[#a6a6a6]">
+          Bienvenido/a, soy <span className="font-extrabold text-red-700 text-4xl">EVA VARGAS</span>
         </h1>
         <div className="flex flex-col md:flex-row gap-5 w-full max-w-6xl">
           <div className="flex justify-center md:w-1/2">
@@ -81,12 +81,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-14 bg-[#ffebe7] flex flex-col gap-10 min-h-screen items-center">
-        <h1 className="text-xl text-[#a6a6a6]">
+      <section className="p-14 bg-[#ffebe7] flex flex-col gap-10 min-h-screen">
+        <h1 className="text-6xl text-[#a6a6a6]">
           Mini Sesiones Navideñas <span className="animate-sparkle">2024</span>
         </h1>
-        <p className="font-extrabold text-red-700 whitespace-nowrap text-3xl">¡Allá Vamos!</p>
-        <div className="flex flex-col md:flex-row gap-5 w-full max-w-6xl">
+        <p className="font-extrabold text-red-700 whitespace-nowrap text-5xl">¡Allá Vamos!</p>
+        <div className="flex flex-col md:flex-row gap-5 w-full items-center">
           <div className="flex flex-col justify-center w-full md:w-1/2">
             <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
               <span className="font-bold text-red-700">2023</span> fue un
@@ -98,7 +98,8 @@ export default function Home() {
             <div className="flex flex-col gap-3">
               <p className="text-[#a6a6a6]">
                 Ya tenemos <span className="font-bold text-red-700">PRE VENTA</span>
-                25% de Descuento en nuestros tickets
+                <br/>
+                <span className="text-3xl"> 25% de Descuento </span> en nuestros tickets
               </p>
               <p className="font-bold text-red-700">
                 HASTA EL 30 DE OCTUBRE
@@ -107,12 +108,12 @@ export default function Home() {
 
             <Link href="/miniShoots/christmas" className="mt-6">
               <Button
-                bg="#FFF"
+                bg="#B91C1C"
                 title="QUIERO MÁS DETALLES"
                 size="md"
                 shadow={true}
                 border={true}
-                textColor="#a6a6a6"
+                textColor="#ffffff"
               />
             </Link>
           </div>
@@ -138,7 +139,7 @@ export default function Home() {
           Mis Grandes <span className="font-extrabold text-red-700">Aliados</span>
         </h1>
         <p className="text-lg md:text-xl text-white w-3/4 mb-5">
-          &quot;Solo llegarás más rápido, pero acompañado, seguramente muchísimo más lejos&quot;
+          &quot;Solo... llegarás más rápido, pero acompañado, seguramente muchísimo más lejos&quot;
         </p>
         <div className="flex flex-col md:flex-row gap-10">
           <Image 

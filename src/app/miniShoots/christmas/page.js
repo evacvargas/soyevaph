@@ -110,6 +110,9 @@ export default function Navidad() {
               POR FAVOR LEER
             </p>
             <p className="text-lg text-[#323336] mb-4">
+              Se muestran los costos full, en pre venta aplicamos el 25% de Descuento a cada ticket.
+            </p>
+            <p className="text-lg text-[#323336] mb-4">
               No hay reembolsos en ediciones como esta - siempre puedes utilizar tu crédito para otra fecha y hora si no puede asistir. 
               <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
             </p>
@@ -125,6 +128,51 @@ export default function Navidad() {
             layout="responsive"
           />
         </div>
+      </section>
+
+      <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">
+        <div className="flex-1">
+          <h1 className="font-serif text-5xl text-[#a6a6a6] mb-6">
+            Planes de Pago
+          </h1>
+          <div>
+            <p className="text-lg text-[#a6a6a6] mb-1 font-bold">
+              Tienes la oportunidad de apartar tu cupo y cancelar en <span className="text-[#b92a49]"> TRES (03) CUOTAS</span>
+            </p>
+            <h1 className="font-extrabold text-[#a6a6a6] mb-5">
+              Fechas de Pago:
+            </h1>
+            <div className="text-[#b92a49] flex flex-col">
+              <p>
+                15 de Octubre
+              </p>
+              <p>
+                30 de Octubre
+              </p>
+              <p>
+                15 de Noviembre
+              </p>
+            </div>
+            <br/>
+            <p className="text-lg text-[#b92a49] mb-1 font-bold">
+              POR FAVOR LEER
+            </p>
+            <p className="text-lg text-[#323336] mb-4">
+              Estos planes de pago no son aplicables a la pre venta
+              <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
+            </p>
+        </div>
+        </div>
+        
+        {/* <div className="flex-none w-1/3">
+          <Image
+            src={xmasPicII}
+            alt="Imagen de Navidad"
+            width={400}
+            height={400}
+            layout="responsive"
+          />
+        </div> */}
       </section>
 
       <footer className="p-6 bg-[#f1f1f1] flex items-center justify-center">
