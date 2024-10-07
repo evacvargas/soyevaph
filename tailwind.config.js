@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {clipPath: {
-      'polygon-shape': 'polygon(0 0, 100% 10%, 100% 90%, 0 100%)',
+      'polygon-shape': 'polygon(0 0, 100% 0%, 100% 90%, 0 100%)',
     },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

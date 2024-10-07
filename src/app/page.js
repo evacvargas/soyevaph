@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       <section
-        className="bg-[#a6a6a6] relative flex flex-col justify-center min-h-screen p-14 items-center text-center"
+        className="bg-[#a6a6a6] relative flex flex-col justify-center min-h-screen p-14 items-center text-center clip-path-polygon-shape"
       >
         <h1 className="text-white text-4xl mb-4">
           Mis Grandes <span className="font-extrabold text-red-700">Aliados</span>
