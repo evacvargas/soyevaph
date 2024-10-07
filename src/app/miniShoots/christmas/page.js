@@ -39,18 +39,11 @@ export default function Navidad() {
         <p className="text-lg text-[#323336] mb-4">
           Tendré un espacio nuevo y completamente sorpresa para ti.
         </p>
-        <p className="text-lg text-[#b92a49] mb-4 font-bold">
-          POR FAVOR LEER
-        </p>
-        <p className="text-lg text-[#323336] mb-4">
-          No hay reembolsos en ediciones como esta - siempre puedes utilizar tu crédito para otra fecha y hora si no puede asistir. 
-          <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
-        </p>
       </section>
 
       <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">
         <div className="flex-1">
-          <h1 className="font-serif text-5xl text-[#323336] mb-4">
+          <h1 className="font-serif text-5xl text-[#323336] mb-6">
             HO HO HO!!!! Paquetes Fotográficos
           </h1>
           <div className="max-w-2xl flex flex-col gap-4">
@@ -72,13 +65,15 @@ export default function Navidad() {
               },
               {
                 name: "Ticket PLATINO",
-                description: "40 MIN DE SESIÓN\n2 CAMBIOS\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA + UN MINI CLIP AUDIOVISUAL A CARGO DE BRYAN NINO",
+                description: "40 MIN DE SESIÓN\n2 CAMBIOS\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA + UN MINI CLIP AUDIOVISUAL A CARGO DE\n@bryanninor",
                 cost: "80 USD",
+                ig: "https://www.instagram.com/bryanninor",
               },
               {
                 name: "Ticket DIAMANTE",
-                description: "40 MIN DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA + UN CLIP AUDIOVISUAL A CARGO DE BRYAN NINO",
+                description: "40 MIN DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA + UN CLIP AUDIOVISUAL A CARGO DE\n@bryanninor",
                 cost: "85 USD",
+                ig: "https://www.instagram.com/bryanninor",
               },
             ].map((ticket) => (
               <div className="flex items-start mb-4" key={ticket.name}>
@@ -87,9 +82,12 @@ export default function Navidad() {
                     <span className={`font-extrabold ${ticket.name === "Ticket AZUL" ? "text-[#97d8f4]" : ticket.name === "Ticket PLATA" ? "text-[#b8b8b8]" : ticket.name === "Ticket ORO" ? "text-[#e6a638]" : ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>{ticket.name}</span>:
                   </h1>
                   <p>
-                    {ticket.description}
+                    {ticket.description.split("@bryanninor")[0]}
+                    <a href={ticket.ig} target="_blank" rel="noopener noreferrer" className={`font-extrabold ${ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>
+                      @bryanninor
+                    </a>
                     <br />
-                    Costo: <span className={`font-extrabold ${ticket.name === "Ticket AZUL" ? "text-[#97d8f4]" : ticket.name === "Ticket PLATA" ? "text-[#b8b8b8]" : ticket.name === "Ticket ORO" ? "text-[#e6a638]" : ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>{ticket.cost}</span>
+                    <span className={`font-extrabold ${ticket.name === "Ticket AZUL" ? "text-[#97d8f4]" : ticket.name === "Ticket PLATA" ? "text-[#b8b8b8]" : ticket.name === "Ticket ORO" ? "text-[#e6a638]" : ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>{ticket.cost}</span>
                   </p>
                 </div>
                 <a
@@ -103,6 +101,15 @@ export default function Navidad() {
               </div>
             ))}
           </div>
+          <div>
+            <p className="text-lg text-[#b92a49] mb-1 font-bold">
+              POR FAVOR LEER
+            </p>
+            <p className="text-lg text-[#323336] mb-4">
+              No hay reembolsos en ediciones como esta - siempre puedes utilizar tu crédito para otra fecha y hora si no puede asistir. 
+              <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
+            </p>
+        </div>
         </div>
         
         <div className="flex-none w-1/3">
