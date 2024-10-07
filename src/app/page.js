@@ -135,8 +135,8 @@ export default function Home() {
             src={logoBryan} 
             alt="logos" 
             className="w-full md:w-auto"
-            width={300}
-            height={250}
+            width={350}
+            height={220}
           />
           <Image 
             src={logoAlex} 
