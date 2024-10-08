@@ -1,8 +1,11 @@
+'use client';
 import Image from "next/image";
 import logo from "../../../../public/logo.png";
 import xmasPic from "../../../../public/xmas.jpg";
 import xmasPicII from "../../../../public/xmasx.jpg";
 import Link from "next/link";
+import { useState } from "react";
+import GoBackButton from "@/components/GoBackBtn";
 
 export default function Navidad() {
   const generateWhatsAppLink = (plan) => {
@@ -11,8 +14,20 @@ export default function Navidad() {
     return `https://wa.me/${phoneNumber}?text=${message}`;
   };
 
+  const [availableDates, setAvailableDates] = useState([
+    { date: "16 de Nov", available: true },
+    { date: "17 de Nov", available: true },
+    { date: "23 de Nov", available: true },
+    { date: "24 de Nov", available: true },
+    { date: "29 de Nov", available: true },
+    { date: "06 de Dic", available: true },
+    { date: "07 de Dic", available: true },
+    { date: "08 de Dic", available: true },
+  ]);
+
   return (
     <div className="min-h-screen flex flex-col gap-8">
+        <GoBackButton />
       <div className="w-full flex justify-center py-4 bg-[#ffebe7]">
         <Image src={logo} alt="logo" width={150} height={150} />
       </div>
@@ -132,47 +147,41 @@ export default function Navidad() {
 
       <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">
         <div className="flex-1">
-          <h1 className="font-serif text-5xl text-[#a6a6a6] mb-6">
-            Planes de Pago
-          </h1>
+          <h1 className="font-serif text-5xl text-[#a6a6a6] mb-6">Planes de Pago</h1>
           <div>
             <p className="text-lg text-[#a6a6a6] mb-1 font-bold">
               Tienes la oportunidad de apartar tu cupo y cancelar en <span className="text-[#b92a49]"> TRES (03) CUOTAS</span>
             </p>
-            <h1 className="font-extrabold text-[#a6a6a6] mb-5">
-              Fechas de Pago:
-            </h1>
-            <div className="text-[#b92a49] flex flex-col">
-              <p>
-                15 de Octubre
-              </p>
-              <p>
-                30 de Octubre
-              </p>
-              <p>
-                15 de Noviembre
-              </p>
+            <h1 className="font-extrabold text-[#a6a6a6] mb-5">Fechas de Pago:</h1>
+            <div className="text-[#b92a49]">
+              <p>15 de Octubre</p>
+              <p>30 de Octubre</p>
+              <p>15 de Noviembre</p>
             </div>
-            <br/>
-            <p className="text-lg text-[#b92a49] mb-1 font-bold">
-              POR FAVOR LEER
-            </p>
+            <br />
+            <p className="text-lg text-[#b92a49] mb-1 font-bold">POR FAVOR LEER</p>
             <p className="text-lg text-[#323336] mb-4">
               Estos planes de pago no son aplicables a la pre venta
               <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
             </p>
+          </div>
         </div>
+
+        <div className="flex flex-col justify-center items-center bg-[#ffebe7] p-4 shadow-lg">
+          <h1 className="font-serif text-3xl text-red-700 mb-6">Fechas Disponibles</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {availableDates.map((date, index) => (
+              <div
+                key={index}
+                className={`cursor-pointer px-4 py-2 rounded-lg text-white ${
+                  date.available ? "bg-red-700" : "bg-[#a6a6a6] line-through"
+                }`}
+              >
+                {date.date}
+              </div>
+            ))}
+          </div>
         </div>
-        
-        {/* <div className="flex-none w-1/3">
-          <Image
-            src={xmasPicII}
-            alt="Imagen de Navidad"
-            width={400}
-            height={400}
-            layout="responsive"
-          />
-        </div> */}
       </section>
 
       <footer className="p-6 bg-[#f1f1f1] flex items-center justify-center">

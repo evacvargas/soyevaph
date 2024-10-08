@@ -4,8 +4,9 @@ import Wallpaper from "../../public/bg2.jpg";
 import profilePic from "../../public/profile.jpg";
 import xmasPic from "../../public/xmasx.jpg";
 import logo from "../../public/logo.png";
-import logoBryan from "../../public/logobryan.png"
-import logoAlex from "../../public/logoalex.png"
+import logoBryan from "../../public/logobryan.png";
+import logoAlex from "../../public/logoalex.png";
+import logoMangos from "../../public/logomangos.png";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -106,7 +107,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Link href="/miniShoots/christmas" className="mt-6">
+            <Link href="/miniShoots/christmas" className="mt-6 w-64">
               <Button
                 bg="#B91C1C"
                 title="QUIERO MÁS DETALLES"
@@ -141,20 +142,27 @@ export default function Home() {
         <p className="text-lg md:text-xl text-white w-3/4 mb-5">
           &quot;Solo... llegarás más rápido, pero acompañado, seguramente muchísimo más lejos&quot;
         </p>
-        <div className="flex flex-col md:flex-row gap-10">
+        <div className="flex flex-col md:flex-row gap-3 justify-center w-full">
           <Image 
             src={logoBryan} 
             alt="logos" 
             className="w-full md:w-auto"
-            width={350}
-            height={220}
+            width={150}
+            height={100}
           />
           <Image 
             src={logoAlex} 
             alt="logos" 
             className="w-full md:w-auto"
-            width={250}
-            height={250}
+            width={150}
+            height={100}
+          />
+          <Image 
+            src={logoMangos} 
+            alt="logos" 
+            className="w-full md:w-auto"
+            width={200}
+            height={100}
           />
         </div>
       </section>

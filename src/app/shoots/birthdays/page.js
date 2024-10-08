@@ -3,6 +3,7 @@ import Logo from "../../../../public/logo.png";
 import bdayPic from "../../../../public/birthdays.jpg";
 import bdayPicI from "../../../../public/birthdaysII.jpg";
 import Link from "next/link";
+import GoBackLink from "@/components/GoBackBtn";
 
 export default function Cumples() {
   const generateWhatsAppLink = (plan) => {
@@ -13,6 +14,7 @@ export default function Cumples() {
 
   return (
     <div className="min-h-screen flex flex-col gap-8">
+      <GoBackLink/>
       <div className="w-full flex justify-center py-4 bg-[#ffebe7]">
         <Image src={Logo} alt="logo" width={150} height={150} />
       </div>
