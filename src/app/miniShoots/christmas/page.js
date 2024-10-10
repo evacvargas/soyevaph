@@ -1,11 +1,11 @@
 'use client';
 import Image from "next/image";
 import logo from "../../../../public/logo.png";
-import xmasPic from "../../../../public/xmas.jpg";
-import xmasPicII from "../../../../public/xmasx.jpg";
+import xmasPic from "../../../../public/xmas2.jpg";
 import Link from "next/link";
 import { useState } from "react";
 import GoBackButton from "@/components/GoBackBtn";
+import Carousel from "@/components/Carousel";
 
 export default function Navidad() {
   const generateWhatsAppLink = (plan) => {
@@ -25,6 +25,17 @@ export default function Navidad() {
     { date: "08 de Dic", available: true },
   ]);
 
+    const christmasImages = [
+      '/xmasx.jpg',
+      '/xmas1.jpg',
+      '/xmas3.jpg',
+      '/xmas5.jpg',
+      '/xmas6.jpg',
+      '/xmas7.jpg',
+      '/xmas8.jpg',
+      '/xmas9.jpg',
+    ];
+
   return (
     <div className="min-h-screen flex flex-col gap-8">
         <GoBackButton />
@@ -37,7 +48,6 @@ export default function Navidad() {
           <Image
             src={xmasPic}
             alt="Mini Sesión Navidad"
-            className="rounded-full"
             width="100%"
             height={600}
           />
@@ -133,16 +143,7 @@ export default function Navidad() {
             </p>
         </div>
         </div>
-        
-        <div className="flex-none w-1/3">
-          <Image
-            src={xmasPicII}
-            alt="Imagen de Navidad"
-            width={400}
-            height={400}
-            layout="responsive"
-          />
-        </div>
+          <Carousel images={christmasImages} intervalTime={3000}/>
       </section>
 
       <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">

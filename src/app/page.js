@@ -7,6 +7,7 @@ import logo from "../../public/logo.png";
 import logoBryan from "../../public/logobryan.png";
 import logoAlex from "../../public/logoalex.png";
 import logoMangos from "../../public/logomangos.png";
+import logoBrisas from "../../public/logobrisas.png";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -15,6 +16,14 @@ import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
+
+  const logos = [
+    { src: logoBryan, alt: "Logo Bryan" },
+    { src: logoAlex, alt: "Logo Alex" },
+    { src: logoMangos, alt: "Logo Mangos" },
+    { src: logoBrisas, alt: "Logo Brisas" },
+  ];
+
   return (
     <div className="flex flex-col min-h-screen"> 
       <Navbar />
@@ -133,37 +142,24 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="bg-[#a6a6a6] relative flex flex-col justify-center min-h-screen p-14 items-center text-center clip-path-polygon-shape"
-      >
+      <section className="bg-[#a6a6a6] relative flex flex-col justify-center min-h-screen p-14 items-center text-center clip-path-polygon-shape">
         <h1 className="text-white text-4xl mb-4">
           Mis Grandes <span className="font-extrabold text-red-700">Aliados</span>
         </h1>
         <p className="text-lg md:text-xl text-white w-3/4 mb-5">
           &quot;Solo... llegarás más rápido, pero acompañado, seguramente muchísimo más lejos&quot;
         </p>
-        <div className="flex flex-col md:flex-row gap-3 justify-center w-full">
-          <Image 
-            src={logoBryan} 
-            alt="logos" 
-            className="w-full md:w-auto"
-            width={150}
-            height={100}
-          />
-          <Image 
-            src={logoAlex} 
-            alt="logos" 
-            className="w-full md:w-auto"
-            width={150}
-            height={100}
-          />
-          <Image 
-            src={logoMangos} 
-            alt="logos" 
-            className="w-full md:w-auto"
-            width={200}
-            height={100}
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+          {logos.map((logo, index) => (
+            <Image
+              key={index}
+              src={logo.src}
+              alt={logo.alt}
+              className="w-full md:w-auto mx-auto"
+              width={200}
+              height={100}
+            />
+          ))}
         </div>
       </section>
 
