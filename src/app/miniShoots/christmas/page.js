@@ -29,11 +29,6 @@ export default function Navidad() {
       '/xmasx.jpg',
       '/xmas1.jpg',
       '/xmas3.jpg',
-      '/xmas5.jpg',
-      '/xmas6.jpg',
-      '/xmas7.jpg',
-      '/xmas8.jpg',
-      '/xmas9.jpg',
     ];
 
   return (
