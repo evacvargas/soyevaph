@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const Carousel = ({ images, intervalTime = 3000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(1); // Empezamos en el primer elemento real
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const extendedImages = [images[images.length - 1], ...images, images[0]];
@@ -31,7 +31,7 @@ const Carousel = ({ images, intervalTime = 3000 }) => {
   }, [currentIndex, extendedImages.length, isTransitioning]);
 
   return (
-    <div className="carousel-container w-full max-w-xl overflow-hidden relative">
+    <div className="carousel-container w-full max-w-xl overflow-hidden relative h-1/2">
       <div
         className={`carousel flex transition-transform duration-500 ease-in-out ${isTransitioning ? '' : 'transition-none'}`}
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

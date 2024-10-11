@@ -48,11 +48,11 @@ export default function Navidad() {
           <Image
             src={xmasPic}
             alt="Mini Sesión Navidad"
-            width="100%"
-            height={600}
+            width="70%"
+            height={400}
           />
         </div>
-        <h1 className="font-serif text-5xl text-[#323336] mb-4">
+        <h1 className="font-serif text-5xl text-red-700 mb-4">
           Mini Sesiones Navidad <span className="font-serif text-5xl text-[#323336]">2024</span>
         </h1>
         <p className="text-lg text-[#323336] mb-4">
@@ -66,21 +66,26 @@ export default function Navidad() {
         </p>
       </section>
 
-      <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8">
+      <section className="bg-white p-6 md:p-12 flex flex-col md:flex-row gap-8 items-center">
         <div className="flex-1">
           <h1 className="font-serif text-5xl text-[#323336] mb-6">
-            HO HO HO!!!! Paquetes Fotográficos
+            <span className="text-red-700">HO HO HO!!!!</span>Paquetes Fotográficos
           </h1>
           <div className="max-w-2xl flex flex-col gap-4">
             {[
               {
+                name: "Ticket Blanco",
+                description: "20 MIN DE SESIÓN\n5 IMAGENES DIGITALES + 1 POLAROID IMPRESA",
+                cost: "30 USD",
+              },
+              {
                 name: "Ticket AZUL",
-                description: "30 MINUTOS DE SESIÓN\n10 IMAGENES DIGITALES + 1 POLAROID IMPRESA",
+                description: "30 MIN DE SESIÓN\n10 IMAGENES DIGITALES + 1 POLAROID IMPRESA",
                 cost: "40 USD",
               },
               {
                 name: "Ticket PLATA",
-                description: "30 MINUTOS DE SESIÓN\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA",
+                description: "30 MIN DE SESIÓN\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA",
                 cost: "45 USD",
               },
               {
@@ -101,7 +106,7 @@ export default function Navidad() {
                 ig: "https://www.instagram.com/bryanninor",
               },
             ].map((ticket) => (
-              <div className="flex items-start mb-4" key={ticket.name}>
+              <div className="flex items-start mb-3" key={ticket.name}>
                 <div className="flex-1">
                   <h1 className="text-lg text-[#323336] mb-1">
                     <span className={`font-extrabold ${ticket.name === "Ticket AZUL" ? "text-[#97d8f4]" : ticket.name === "Ticket PLATA" ? "text-[#b8b8b8]" : ticket.name === "Ticket ORO" ? "text-[#e6a638]" : ticket.name === "Ticket PLATINO" ? "text-[#2c9d93]" : "text-[#bb2929]"}`}>{ticket.name}</span>:
@@ -130,7 +135,7 @@ export default function Navidad() {
               </div>
             ))}
           </div>
-          <div>
+          <div className="w-[70%] mt-7">
             <p className="text-lg text-[#b92a49] mb-1 font-bold">
               POR FAVOR LEER
             </p>
@@ -138,10 +143,14 @@ export default function Navidad() {
               Se muestran los costos full, en pre venta aplicamos el 25% de Descuento a cada ticket.
             </p>
             <p className="text-lg text-[#323336] mb-4">
+              <span className="font-bold text-[#b92a49]"> Ticket Blanco </span>: 
+              No aplica para PRE VENTA - Ni sorteos.
+            </p>
+            <p className="text-lg text-[#323336] mb-4">
               No hay reembolsos en ediciones como esta - siempre puedes utilizar tu crédito para otra fecha y hora si no puede asistir. 
               <span className="font-bold text-[#b92a49]"> Gracias por tu comprensión. </span>
             </p>
-        </div>
+          </div>
         </div>
           <Carousel images={christmasImages} intervalTime={3000}/>
       </section>
