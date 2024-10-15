@@ -18,7 +18,7 @@ const Ticket = ({ item, onClick }) => {
           if (description.includes("@") && item.ig) {
             const splittedDescription = description.split("@");
             return (
-              <span className="lowercase">
+              <span className="lowercase" key={index}>
                 {splittedDescription[0]}
                 <a
                   href={item.ig}
