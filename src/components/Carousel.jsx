@@ -2,11 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 const Carousel = ({ images, intervalTime = 3000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(1); // Empezamos en el primer elemento real
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(true);
   const timeoutRef = useRef(null);
 
-  const extendedImages = [images[images.length - 1], ...images, images[0]]; // Clonamos la primera y última imagen
+  const extendedImages = [images[images.length - 1], ...images, images[0]];
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
@@ -24,19 +24,16 @@ const Carousel = ({ images, intervalTime = 3000 }) => {
     return () => resetTimeout();
   }, [currentIndex, intervalTime]);
 
-  // Efecto para hacer el ciclo infinito sin saltos abruptos
   useEffect(() => {
     if (currentIndex === extendedImages.length - 1) {
-      // Al llegar al final, reiniciamos al primer índice real sin transición visible
       setTimeout(() => {
         setIsTransitioning(false);
-        setCurrentIndex(1); // Primer índice real
-      }, 500); // Espera a que termine la transición
+        setCurrentIndex(1);
+      }, 500);
     } else if (currentIndex === 0) {
-      // Al llegar al inicio, vamos al último índice real sin transición visible
       setTimeout(() => {
         setIsTransitioning(false);
-        setCurrentIndex(extendedImages.length - 2); // Último índice real
+        setCurrentIndex(extendedImages.length - 2);
       }, 500);
     }
   }, [currentIndex, extendedImages.length]);
@@ -56,7 +53,7 @@ const Carousel = ({ images, intervalTime = 3000 }) => {
               width={350}
               height={350}
               className="w-full"
-              priority={index === 1} // Prioridad en la primera imagen real
+              priority={index === 1}
             />
           </div>
         ))}

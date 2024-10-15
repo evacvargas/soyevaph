@@ -9,7 +9,7 @@ import Ticket from "@/components/Ticket";
 import { Playfair_Display } from "next/font/google";
 export const titleFont = Playfair_Display({ subsets: ["latin"] });
 
-const christmasImages = ["/xmasx.jpg", "/xmas1.jpg", "/xmas3.jpg"];
+const christmasImages = ["/xmasx.jpg", "/xmas1.jpg", "/xmas2.jpg", "/xmas3.jpg", "/xmas4.jpg"];
 const availableDates = [
   { date: "16 de Nov", available: true },
   { date: "17 de Nov", available: true },
