@@ -119,9 +119,12 @@ export default function Navidad() {
             Paquetes Fotográficos
           </h1>
           <div className="flex flex-wrap gap-[40px]">
-            {tickets.map((ticket) => (
-              <div className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(33.33%-40px)]">
-                <Ticket item={ticket} onClick={generateWhatsAppLink} />
+            {tickets.map((ticket, index) => (
+              <div className="w-full sm:w-[calc(50%-20px)] lg:w-[calc(33.33%-40px)]"  key={index}>
+                <Ticket
+                item={ticket} 
+                onClick={generateWhatsAppLink} 
+                />
               </div>
             ))}
           </div>
