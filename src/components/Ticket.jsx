@@ -59,7 +59,7 @@ const Ticket = ({ item, onClick }) => {
           <span className="text-red-500 line-through mr-3">{item.cost}</span>
         )}
         {item.presale && (
-          <span className="text-red-500 line-through mr-3">{item.cost}</span>
+          <span className="text-red-500 line-through mr-3 text-xl">{item.cost}</span>
         )}
         <span className={`${item.promotion || item.presale ? 'text-green-800' : ''}`}>
           {discountedCost} USD
