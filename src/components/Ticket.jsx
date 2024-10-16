@@ -56,7 +56,7 @@ const Ticket = ({ item, onClick }) => {
       </ul>
       <div className={`${titleFont.className} my-[30px] text-[28px] font-semibold`}>
         {item.promotion && !item.presale && (
-          <span className="text-red-500 line-through mr-3">{item.cost}</span>
+          <span className="text-red-500 line-through mr-3 text-xl">{item.cost}</span>
         )}
         {item.presale && (
           <span className="text-red-500 line-through mr-3 text-xl">{item.cost}</span>
