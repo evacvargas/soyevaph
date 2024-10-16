@@ -54,7 +54,7 @@ const Ticket = ({ item, onClick }) => {
           );
         })}
       </ul>
-      <div className="my-[30px] text-[28px] font-semibold">
+      <div className={`${titleFont.className} my-[30px] text-[28px] font-semibold`}>
         {item.promotion && !item.presale && (
           <span className="text-red-500 line-through mr-3">{item.cost}</span>
         )}
@@ -67,7 +67,7 @@ const Ticket = ({ item, onClick }) => {
       </div>
       <div
         onClick={() => onClick(item.name)}
-        className="cursor-pointer text-[#b91b1d] p-4 rounded-xl bg-white border"
+        className="cursor-pointer text-[#b91b1d] p-4 rounded-xl bg-white border border-red-700 font-medium"
       >
         Reservar
       </div>
