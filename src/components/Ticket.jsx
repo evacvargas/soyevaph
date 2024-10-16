@@ -1,6 +1,14 @@
 import { titleFont } from "@/app/miniShoots/christmas/page";
 
 const Ticket = ({ item, onClick }) => {
+  const originalCost = parseFloat(item.cost.split(" ")[0]);
+  
+  const discountedCost = item.presale 
+    ? (originalCost * 0.75).toFixed(2)
+    : item.promotion 
+    ? (originalCost * 0.85).toFixed(2)
+    : originalCost.toFixed(2);
+
   return (
     <div className="rounded-3xl shadow-[0px_0px_5px_#c0c0c0] pt-8 p-5 text-center relative h-[450px] flex flex-col justify-between">
       {item.presale && (
@@ -8,6 +16,13 @@ const Ticket = ({ item, onClick }) => {
           Pre-venta 25% off
         </div>
       )}
+
+      {item.promotion && !item.presale && (
+        <div className="flex items-center justify-center bg-[#b91b1d] text-white font-medium absolute top-[-20px] right-[-10px] rounded-lg py-2 px-4 uppercase">
+          15% de DESC de Contado
+        </div>
+      )}
+      
       <h2
         className={`text-[#323336] font-bold text-[40px] uppercase mb-6 ${titleFont.className}`}
       >
@@ -39,10 +54,16 @@ const Ticket = ({ item, onClick }) => {
           );
         })}
       </ul>
-      <div
-        className={`my-[30px] text-[28px] font-semibold ${titleFont.className}`}
-      >
-        {item.cost}
+      <div className="my-[30px] text-[28px] font-semibold">
+        {item.promotion && !item.presale && (
+          <span className="text-red-500 line-through mr-3">{item.cost}</span>
+        )}
+        {item.presale && (
+          <span className="text-red-500 line-through mr-3">{item.cost}</span>
+        )}
+        <span className={`${item.promotion || item.presale ? 'text-green-800' : ''}`}>
+          {discountedCost} USD
+        </span>
       </div>
       <div
         onClick={() => onClick(item.name)}

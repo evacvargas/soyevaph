@@ -133,7 +133,13 @@ export default function Navidad() {
               No hay reembolsos en ediciones especiales.
               <br />
               Siempre puedes utilizar tu crédito para otra fecha y hora.
+              <br/>
+              <br/>
+              <span className="font-extrabold text-[#a6a6a6]">FOTOS EXTRAS</span>
             </p>
+            <div className="flex justify-center space-x-2">
+              <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">2 USD C/U</span>
+            </div>
           </div>
         </div>
       </section>
