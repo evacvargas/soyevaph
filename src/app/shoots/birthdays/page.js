@@ -2,6 +2,7 @@ import Image from "next/image";
 import Logo from "../../../../public/logo.png";
 import bdayPic from "../../../../public/birthdays.jpg";
 import bdayPicI from "../../../../public/birthdaysII.jpg";
+import bdayPicII from "../../../../public/BirthdaysI.jpg";
 import Link from "next/link";
 import GoBackLink from "@/components/GoBackBtn";
 
@@ -22,7 +23,7 @@ export default function Cumples() {
       <section className="w-full mx-auto p-10 bg-[#ffebe7]">
         <div className="relative w-full flex justify-center mb-10 shadow-md">
           <Image
-            src={bdayPic}
+            src={bdayPicII}
             alt="Birthdays"
             width="100%"
             height={600}
@@ -46,22 +47,22 @@ export default function Cumples() {
             {[
               {
                 name: "Feliz Cumpleaños 1",
-                description: "30 MINUTOS DE SESIÓN\n15 IMAGENES DIGITALES + 1 POLAROID IMPRESA (Puede traer su torta y props)",
+                description: "30 MINUTOS DE SESIÓN\n10 IMAGENES DIGITALES + 1 POLAROID IMPRESA (Puede traer su torta y props)",
                 cost: "35 USD",
               },
               {
                 name: "Feliz Cumpleaños 2",
-                description: "30 MINUTOS DE SESIÓN\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA (Puede traer su torta y props)",
+                description: "30 MINUTOS DE SESIÓN\n15 IMAGENES DIGITALES + 1 POSTAL IMPRESA (Puede traer su torta y props)",
                 cost: "40 USD",
               },
               {
                 name: "Feliz Cumpleaños 3",
-                description: "40 MIN DE SESIÓN\n2 CAMBIOS DE VESTUARIO\n15 IMAGENES DIGITALES + 1 Mini Cake Sencilla + Pequeña Deco",
+                description: "40 MIN DE SESIÓN\n15 IMAGENES DIGITALES + 1 Mini Cake Sencilla + Pequeña Deco",
                 cost: "60 USD",
               },
               {
                 name: "Feliz Cumpleaños 4",
-                description: "1 hora DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA + 1 Mini Cake Sencilla + Pequeña Deco",
+                description: "40 MIN DE SESIÓN\n2 CAMBIOS\n20 IMAGENES DIGITALES + 1 POSTAL IMPRESA + 1 Mini Cake Sencilla + Pequeña Deco",
                 cost: "70 USD",
               },
               {
