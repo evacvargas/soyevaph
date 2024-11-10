@@ -11,11 +11,11 @@ const Ticket = ({ item, onClick }) => {
 
   return (
     <div className="rounded-3xl shadow-[0px_0px_5px_#c0c0c0] pt-8 p-5 text-center relative h-[450px] flex flex-col justify-between">
-      {item.presale && (
+      {/* {item.presale && (
         <div className="flex items-center justify-center bg-[#b91b1d] text-white font-medium absolute top-[-20px] right-[-10px] rounded-lg py-2 px-4 uppercase">
           Pre-venta 25% off
         </div>
-      )}
+      )} */}
 
       {item.promotion && !item.presale && (
         <div className="flex items-center justify-center bg-[#b91b1d] text-white font-medium absolute top-[-20px] right-[-10px] rounded-lg py-2 px-4 uppercase">
@@ -58,11 +58,11 @@ const Ticket = ({ item, onClick }) => {
         {item.promotion && !item.presale && (
           <span className="text-red-500 line-through mr-3 text-xl">{item.cost}</span>
         )}
-        {item.presale && (
+        {/* {item.presale && (
           <span className="text-red-500 line-through mr-3 text-xl">{item.cost}</span>
-        )}
+        )} */}
         <span className={`${item.promotion || item.presale ? 'text-green-800' : ''}`}>
-          {discountedCost} USD
+          {item.cost} USD
         </span>
       </div>
       <div

@@ -97,7 +97,7 @@ export default function Navidad() {
             </div>
           </div>
           <p className="text-lg text-[#323336] mb-4">
-            ¡<b>PRE VENTA</b> disponible!
+            ¡<b>PRE VENTA</b> <b className="line-through"> disponible!</b>
           </p>
           <p className="text-lg text-[#323336]">
             Es mi segundo año creando este set.
