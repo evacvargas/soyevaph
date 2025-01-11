@@ -35,11 +35,11 @@ export default function Cumples() {
         <Image src={Logo} alt="logo" width={150} height={150} />
       </div>
 
-      <section className="w-full mx-auto p-10 bg-[#ffebe7] flex flex-col items-center ">
+      <section className="w-full mx-auto p-10 bg-[#ffebe7] flex flex-col">
         <div className="w-full sm:w-1/2 mb-4">
           <Carousel images={bdaysImages} intervalTime={3000} />
         </div>
-        <h1 className="font-serif text-5xl text-[#323336] mb-4 self-start">
+        <h1 className="font-serif text-5xl text-[#323336] mb-4">
           Sesiones{" "}
           <span className="font-serif text-5xl text-[#323336]">Celebra-Te</span>
         </h1>
