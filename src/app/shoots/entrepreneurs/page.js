@@ -14,20 +14,20 @@ const proImages = ['/pro3.jpg', '/pro2.jpg', '/pro4.jpg'];
 const tickets = [
   {
     name: "Plan Contigo",
-    description: "10 FOTOGRAFIAS DIGITALES",
+    description: "8 FOTOGRAFIAS DIGITALES",
     cost: "30 USD",
     promotion: true,
   },
   {
     name: "Plan Pana",
-    description: "15 FOTOGRAFIAS DIGITALES",
-    cost: "40 USD",
+    description: "10 FOTOGRAFIAS DIGITALES",
+    cost: "35 USD",
     promotion: true,
   },
   {
     name: "Plan Socio",
-    description: "20 FOTOGRAFIAS DIGITALES",
-    cost: "45 USD",
+    description: "15 FOTOGRAFIAS DIGITALES",
+    cost: "40 USD",
     promotion: true,
   },
 ];
@@ -43,7 +43,7 @@ export default function Profesionales() {
   const discountedTickets = tickets.map((ticket) => {
     if (ticket.promotion) {
       const originalCost = parseFloat(ticket.cost.split(" ")[0]);
-      const discount = originalCost * 0.25;
+      const discount = originalCost * 0.15;
       const newCost = (originalCost - discount).toFixed(2);
       return { ...ticket, originalCost: originalCost, newCost: newCost };
     }
@@ -97,7 +97,7 @@ export default function Profesionales() {
           </div>
           <div className="w-full mt-8">
             <p className="text-lg text-[#a6a6a6] mb-4 text-center">
-              No hay reembolsos en promociones
+              No hay reembolsos
               <br />
               Siempre puedes utilizar tu crédito para otra fecha y hora.
               <br />

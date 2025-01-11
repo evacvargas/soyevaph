@@ -6,6 +6,7 @@ import logoBryan from "../../public/logobryan.png";
 import logoAlex from "../../public/logoalex.png";
 import logoMangos from "../../public/logomangos.png";
 import logoBrisas from "../../public/logobrisas.png";
+import logoBrulee from "../../public/logobrulee.png";
 import Button from "@/components/Button";
 import Link from "next/link";
 import Navbar from "@/components/NavBar";
@@ -13,6 +14,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { titleFont } from "./miniShoots/christmas/page";
+import { FaHeart } from "react-icons/fa";
 
 export default function Home() {
   const logos = [
@@ -20,6 +22,7 @@ export default function Home() {
     { src: logoAlex, alt: "Logo Alex" },
     { src: logoMangos, alt: "Logo Mangos" },
     { src: logoBrisas, alt: "Logo Brisas" },
+    { src: logoBrulee, alt: "Logo Brulee" },
   ];
 
   return (
@@ -91,50 +94,109 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#ffebe7] flex flex-col min-h-screen">
-        <div className="flex flex-col md:flex-row w-full items-center">
-          <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24">
-            <h1
-              className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}
-            >
-              Mini Sesiones Navideñas 2024
-            </h1>
-            <p className="font-bold text-red-700 whitespace-nowrap text-2xl mb-4">
-              ¡Allá Vamos!
-            </p>
-            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
-              <span className="font-bold text-red-700">2023</span> fue un bonito
-              año en el set, un ensayo y error, un experimento que resultó ser
-              una experiencia inolvidable. Por lo que, 2024 no podía pasar
-              desapercibido. He pensado a detalle lo que quiero ofrecer y espero
-              que estén tan emocionados como yo...
-            </p>
-            <div className="flex flex-col">
-              <p className="text-[#a6a6a6]">
-                <span className="font-extrabold text-red-700">PRE VENTA</span>
-                <br />
-                <span className="text-3xl font-bold"> 25% de Descuento </span>
-              </p>
-              <p className="font-bold text-red-700">HASTA EL 30 DE OCTUBRE</p>
-            </div>
-
-            <Link href="/miniShoots/christmas" className="mt-6 w-64">
-              <Button
-                bg="#B91C1C"
-                title="QUIERO MÁS DETALLES"
-                size="md"
-                shadow={false}
-                border={false}
-                textColor="#ffffff"
-              />
-            </Link>
-          </div>
-
-          <div className="flex justify-center w-full md:w-1/2">
-            <img src="/xmasx.jpg" alt="Profile" className="w-full h-full" />
-          </div>
+      <section className="bg-[#ffebe7] flex flex-col min-h-screen relative overflow-hidden">
+  {/* Contenido principal (texto) */}
+  <div className="flex flex-col md:flex-row w-full items-center z-10 relative p-6">
+    <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
+      {/* Contenedor de corazones flotantes dentro del área de texto */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        <div
+          className="absolute text-red-500 animate-float"
+          style={{
+            top: "10%",
+            left: "5%",
+            fontSize: "1.5rem",
+            color: "#ff0000", // Corazón rojo
+          }}
+        >
+          <FaHeart />
         </div>
-      </section>
+        <div
+          className="absolute text-red-500 animate-float"
+          style={{
+            top: "5%",
+            left: "20%",
+            fontSize: "2rem",
+            color: "#ff3366", // Corazón rosa
+          }}
+        >
+          <FaHeart />
+        </div>
+        <div
+          className="absolute text-red-500 animate-float"
+          style={{
+            top: "2%",
+            left: "80%",
+            fontSize: "2.5rem",
+            color: "#ff6699", // Corazón en rosa claro
+          }}
+        >
+          <FaHeart />
+        </div>
+        <div
+          className="absolute text-[#ff4f41] animate-float"
+          style={{
+            top: "80%",
+            left: "60%",
+            fontSize: "3rem",
+            color: "#ff6666", // Corazón naranja
+          }}
+        >
+          <FaHeart />
+        </div>
+        <div
+          className="absolute text-red-500 animate-float"
+          style={{
+            top: "50%",
+            left: "100%",
+            fontSize: "1.8rem",
+            color: "#ff99cc", // Corazón lila
+          }}
+        >
+          <FaHeart />
+        </div>
+      </div>
+
+      <h1 className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}>
+        Mini Sesiones SAN VALENTÍN 2025
+      </h1>
+      <p className="font-bold text-red-700 whitespace-nowrap text-2xl mb-4">
+        ¡Ya el amor está en el aire! ❤️
+      </p>
+      <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+        Este San Valentín, captura momentos inolvidables con quien amas o celebrando la amistad. Un set{" "}
+        <span className="font-bold text-red-700">minimalista</span>{" "}
+        diseñado para risas, abrazos y mucho cariño.
+      </p>
+      <div className="flex flex-col">
+        <p className="text-[#a6a6a6]">
+          <span className="font-extrabold text-red-700">PRE VENTA</span>
+          <br />
+          <span className="text-3xl font-bold"> 25% de Descuento </span>
+        </p>
+        <p className="font-bold text-red-700">HASTA EL 30 DE ENERO</p>
+      </div>
+
+      <Link href="/miniShoots/valentinesDay" className="mt-6 w-64">
+        <Button
+          bg="#ff4f41"
+          title="QUIERO MÁS DETALLES"
+          size="md"
+          shadow={false}
+          border={false}
+          textColor="#fff"
+          className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#ff4f41]"
+        />
+      </Link>
+    </div>
+
+    {/* Imagen en el lado derecho (para pantallas grandes) */}
+    <div className="flex justify-center w-full md:w-1/2">
+      <img src="/birthdayBg.jpg" alt="Profile" className="w-full h-full" />
+    </div>
+  </div>
+</section>
+
 
       <section className="relative flex flex-col justify-center px-24 py-[100px] items-center text-center clip-path-polygon-shape">
         <div className="mb-12 text-center">

@@ -6,9 +6,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {clipPath: {
-      'polygon-shape': 'polygon(0 0, 100% 0%, 100% 95%, 0 100%)',
-    },
+    extend: {
+      clipPath: {
+        "polygon-shape": "polygon(0 0, 100% 0%, 100% 95%, 0 100%)",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -16,37 +17,38 @@ module.exports = {
       },
       keyframes: {
         sparkle: {
-          '0%': { 
-            color: '#a6a6a6', 
-            textShadow: '0 0 0 rgba(166, 166, 166, 0)' 
+          "0%": { color: "#a6a6a6", textShadow: "0 0 0 rgba(166, 166, 166, 0)" },
+          "25%": {
+            color: "#d3d3d3",
+            textShadow:
+              "0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)",
           },
-          '25%': { 
-            color: '#d3d3d3', 
-            textShadow: '0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)' 
+          "50%": {
+            color: "#fff",
+            textShadow:
+              "0 0 20px rgba(166, 166, 166, 1), 0 0 30px rgba(166, 166, 166, 0.9)",
           },
-          '50%': { 
-            color: '#fff', 
-            textShadow: '0 0 20px rgba(166, 166, 166, 1), 0 0 30px rgba(166, 166, 166, 0.9)' 
+          "75%": {
+            color: "#d3d3d3",
+            textShadow:
+              "0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)",
           },
-          '75%': { 
-            color: '#d3d3d3', 
-            textShadow: '0 0 10px rgba(166, 166, 166, 0.8), 0 0 20px rgba(166, 166, 166, 0.4)' 
-          },
-          '100%': { 
-            color: '#a6a6a6', 
-            textShadow: '0 0 0 rgba(166, 166, 166, 0)' 
-          },
+          "100%": { color: "#a6a6a6", textShadow: "0 0 0 rgba(166, 166, 166, 0)" },
+        },
+        float: {
+          "0%": { transform: "translateY(0)", opacity: "1" },
+          "50%": { transform: "translateY(-30px)", opacity: "0.8" },
+          "100%": { transform: "translateY(-60px)", opacity: "0" },
         },
       },
       animation: {
-        sparkle: 'sparkle 2s ease-in-out infinite',
+        sparkle: "sparkle 2s ease-in-out infinite",
+        float: "float 3s ease-in-out infinite",
       },
       zIndex: {
-        '1': '1',
+        1: "1",
       },
     },
   },
-  plugins: [
-    require('tailwind-clip-path'),
-  ],
+  plugins: [require("tailwind-clip-path")],
 };

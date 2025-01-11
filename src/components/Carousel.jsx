@@ -46,13 +46,13 @@ const Carousel = ({ images, intervalTime = 3000 }) => {
         onTransitionEnd={() => setIsTransitioning(true)}
       >
         {extendedImages.map((src, index) => (
-          <div key={index} className="shadow-lg carousel-image w-full shrink-0">
+          <div key={index} className="carousel-image w-full shrink-0">
             <Image
               src={src}
               alt={`Imagen ${index}`}
               width={350}
               height={350}
-              className="w-full"
+              className="w-full h-auto"
               priority={index === 1}
             />
           </div>
