@@ -4,7 +4,7 @@
 // import bdayPicI from "../../../../public/birthdaysII.jpg";
 import Link from "next/link";
 
-export default function Profesionales() {
+export default function Embarazadas() {
   const generateWhatsAppLink = (plan) => {
     const phoneNumber = "+5804129207967"; 
     const message = encodeURIComponent(`¡Hola! Me gustaría reservar el ${plan} para la Mini Sesión de Navidad.`);
