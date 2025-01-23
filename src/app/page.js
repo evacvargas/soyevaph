@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 import Image from "next/image";
 import Wallpaper from "../../public/bg2.jpg";
 import logo from "../../public/logo.png";
@@ -26,8 +27,22 @@ export default function Home() {
   ];
 
   const quotes = [
-    "/testimonios/testimonio3.png", "/testimonios/testimonio1.png", "/testimonios/testimonio2.png",
+    "/testimonio3.png",
+    "/testimonio1.png",
+    "/testimonio2.png",
+    "/testimonio2.png",
+    "/testimonio2.png",
+    "/testimonio2.png",
   ];
+  const scrollContainer = useRef(null);
+
+  const scrollLeft = () => {
+    scrollContainer.current.scrollBy({ left: -300, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollContainer.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
 
   return (
     <div>
@@ -110,7 +125,7 @@ export default function Home() {
                   top: "10%",
                   left: "5%",
                   fontSize: "1.5rem",
-                  color: "#ff0000", // Corazón rojo
+                  color: "#ff0000",
                 }}
               >
                 <FaHeart />
@@ -121,7 +136,7 @@ export default function Home() {
                   top: "5%",
                   left: "20%",
                   fontSize: "2rem",
-                  color: "#ff3366", // Corazón rosa
+                  color: "#ff3366",
                 }}
               >
                 <FaHeart />
@@ -132,7 +147,7 @@ export default function Home() {
                   top: "2%",
                   left: "80%",
                   fontSize: "2.5rem",
-                  color: "#ff6699", // Corazón en rosa claro
+                  color: "#ff6699",
                 }}
               >
                 <FaHeart />
@@ -143,7 +158,7 @@ export default function Home() {
                   top: "80%",
                   left: "60%",
                   fontSize: "3rem",
-                  color: "#ff6666", // Corazón naranja
+                  color: "#ff6666",
                 }}
               >
                 <FaHeart />
@@ -154,7 +169,7 @@ export default function Home() {
                   top: "50%",
                   left: "100%",
                   fontSize: "1.8rem",
-                  color: "#ff99cc", // Corazón lila
+                  color: "#ff99cc",
                 }}
               >
                 <FaHeart />
@@ -179,7 +194,7 @@ export default function Home() {
               <p className="text-[#a6a6a6]">
                 <span className="font-extrabold text-red-700">PRE VENTA</span>
                 <br />
-                <span className="text-3xl font-bold"> 25% de Descuento </span>
+                <span className="text-3xl font-bold"> 20% de Descuento </span>
               </p>
               <p className="font-bold text-red-700">HASTA EL 30 DE ENERO</p>
             </div>
@@ -197,47 +212,64 @@ export default function Home() {
             </Link>
           </div>
 
-          {/* Imagen en el lado derecho (para pantallas grandes) */}
           <div className="flex justify-center w-full md:w-1/2">
-            <img
+            <Image
               src="/birthdayBg.jpg"
               alt="Profile"
+              width={100}
+              height={100}
               className="w-full h-full"
             />
           </div>
         </div>
       </section>
 
-      <section className="relative flex flex-col justify-center px-24 py-[100px] items-center text-center clip-path-polygon-shape">
+      <section
+        className="relative flex flex-col justify-center 
+        px-4 sm:px-24 py-[100px] items-center text-center clip-path-polygon-shape"
+      >
         <div className="mb-12 text-center">
-          <h1 className={`text-[#323336] text-4xl mb-4 ${titleFont.className}`}>
-            Una imagen dice mas que mil palabras...{" "}
-            {/* <span className="font-extrabold text-red-700">Aliados</span> */}
+          <h1 className="text-[#323336] text-4xl mb-4">
+            Una imagen dice más que mil palabras...
           </h1>
-          {/* <p className="text-lg md:text-xl mb-5 font-light">
-            &quot;Solo... llegarás más rápido, pero acompañado, seguramente
-            muchísimo más lejos&quot;
-          </p> */}
         </div>
-        <div className="flex gap-12 flex-wrap w-full justify-center">
-  {quotes.map((src, index) => {
-    return (
-      <div
-      key={index}
-      className="bg-[#212121] w-full sm:w-[calc(50%-48px)] lg:w-[calc(25%-48px)] h-[170px] flex justify-center items-center rounded-2xl shadow-md overflow-hidden transition-transform duration-300 transform hover:scale-105"
-    >
-      <Image
-        src={src}
-        alt={`Image ${index + 1}`}
-        className="w-full h-full object-contain"
-        width={200}
-        height={100}
-      />
-    </div>
-    );
-  })}
-</div>
+        <div
+          ref={scrollContainer}
+          className="flex gap-6 w-full justify-start p-4 overflow-hidden"
+        >
+          {quotes.map((src, index) => (
+            <div
+              key={index}
+              className="bg-[#212121] w-72 flex-shrink-0 h-[170px] flex justify-center items-center 
+              rounded-2xl shadow-md overflow-hidden transition-transform 
+              duration-300 transform hover:scale-105"
+            >
+              <Image
+                src={src}
+                width={100}
+                height={100}
+                alt={`Testimonio ${index + 1}`}
+                className="w-full h-full object-contain"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="flex items-center gap-4 w-full justify-center mt-6">
+          <button
+            onClick={scrollLeft}
+            className="bg-[#ff6699] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-800"
+          >
+            ⟨
+          </button>
+          <button
+            onClick={scrollRight}
+            className="bg-[#ff6699] text-white rounded-full w-10 h-10 flex items-center justify-center hover:bg-gray-800"
+          >
+            ⟩
+          </button>
+        </div>
       </section>
+
       <section className="relative flex flex-col justify-center px-24 py-[100px] items-center text-center clip-path-polygon-shape">
         <div className="mb-12 text-center">
           <h1 className={`text-[#323336] text-4xl mb-4 ${titleFont.className}`}>
@@ -254,7 +286,7 @@ export default function Home() {
             return (
               <div
                 key={index}
-                className="bg-white w-full sm:w-[calc(50%-48px)] lg:w-[calc(25%-48px)] h-[200px] flex justify-center items-center rounded-2xl w-[80%] shadow-md"
+                className="bg-white sm:w-[calc(50%-48px)] lg:w-[calc(25%-48px)] h-[200px] flex justify-center items-center rounded-2xl w-[80%] shadow-md"
               >
                 <Image
                   src={logo.src}
