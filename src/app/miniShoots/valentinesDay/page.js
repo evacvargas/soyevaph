@@ -127,7 +127,7 @@ export default function SanValentin() {
           <p className="text-lg text-[#323336]">Hola CORAZONES.</p>
         </div>
         <div className="w-full sm:w-1/2">
-          <Carousel images={valentinesImages} intervalTime={4000} />
+          <Carousel images={valentinesImages} intervalTime={3000} />
         </div>
       </section>
 

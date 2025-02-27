@@ -65,14 +65,14 @@ export default function Cumples() {
               {
                 name: "Feliz Cumpleaños EXPRESS",
                 description:
-                  "20 MIN DE SESIÓN\n5 IMAGENES DIGITALES (Puede traer su torta - accesorios - globos)",
+                  "20 MIN DE SESIÓN\n6 IMAGENES DIGITALES (Puede traer su torta - accesorios - globos)",
                 cost: "25 USD",
                 isExpress: true,
               },
               {
                 name: "Feliz Cumpleaños 1",
                 description:
-                  "30 MINUTOS DE SESIÓN\n12 IMAGENES DIGITALES (Puede traer su torta - accesorios - globos)",
+                  "30 MINUTOS DE SESIÓN\n10 IMAGENES DIGITALES (Puede traer su torta - accesorios - globos)",
                 cost: "35 USD",
               },
               {
@@ -90,7 +90,7 @@ export default function Cumples() {
               {
                 name: "Feliz Cumpleaños 4",
                 description:
-                  "40 MIN DE SESIÓN\n2 CAMBIOS\n15 IMAGENES DIGITALES + 1 Mini Cake Sencilla + Pequeña Deco PERSONALIZADA (Tema - Colores)",
+                  "40 MIN DE SESIÓN\n2 CAMBIOS DE VESTUARI (por el cliente)\n15 IMAGENES DIGITALES + 1 Mini Cake Sencilla + Pequeña Deco PERSONALIZADA (Tema - Colores)",
                 cost: "75 USD",
               },
             ].map((packageOption) => (

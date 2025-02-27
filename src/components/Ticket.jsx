@@ -68,7 +68,7 @@ const Ticket = ({ item, onClick, showHearts }) => {
 
       {/* Mostrar etiqueta de pre-venta si aplica */}
       {item.presale && (
-        <div className="absolute -top-4 -right-4 bg-[#b91b1d] text-white font-medium rounded-lg py-1 px-3 uppercase shadow-lg text-xs">
+        <div className="absolute -top-6 -right-6 bg-[#b91b1d] text-white font-medium rounded-lg py-1 px-3 uppercase shadow-lg text-xs">
           Pre-venta 20% off
         </div>
       )}

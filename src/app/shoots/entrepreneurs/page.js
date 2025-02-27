@@ -15,20 +15,20 @@ const tickets = [
   {
     name: "Plan Contigo",
     description: "8 FOTOGRAFIAS DIGITALES",
-    cost: "30 USD",
-    promotion: true,
+    cost: "25 USD",
+    // promotion: true,
   },
   {
     name: "Plan Pana",
     description: "10 FOTOGRAFIAS DIGITALES",
-    cost: "35 USD",
-    promotion: true,
+    cost: "30 USD",
+    // promotion: true,
   },
   {
     name: "Plan Socio",
     description: "15 FOTOGRAFIAS DIGITALES",
     cost: "40 USD",
-    promotion: true,
+    // promotion: true,
   },
 ];
 

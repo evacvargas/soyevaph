@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { titleFont } from "./miniShoots/christmas/page";
-import { FaHeart } from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa6";
 
 export default function Home() {
   const logos = [
@@ -42,6 +42,15 @@ export default function Home() {
 
   const scrollRight = () => {
     scrollContainer.current.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
+  const generateWhatsAppLink = (plan) => {
+    const phoneNumber = "+5804129207967";
+    const message = encodeURIComponent(
+      `¡Hola! Me gustaría reservar el ${plan} para Emprendedores.`
+    );
+
+    window.open(`https://wa.me/${phoneNumber}?text=${message}`);
   };
 
   return (
@@ -71,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex items-center flex-wrap text-center md:text-left">
+      <section className="flex bg-[#ffebe7] items-center flex-wrap text-center md:text-left">
         <div className="flex justify-center w-full md:w-1/2">
           <img src="/profile.jpg" alt="Profile" className="w-full" />
         </div>
@@ -113,12 +122,59 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#ffebe7] flex flex-col min-h-screen relative overflow-hidden">
-        {/* Contenido principal (texto) */}
-        <div className="flex flex-col md:flex-row w-full items-center z-10 relative p-6">
+      <section className="flex flex-col relative overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
+          <div className="flex justify-center w-full md:w-1/2">
+            <Image
+              src="/woman.jpg"
+              alt="Profile"
+              width={500}
+              height={500}
+              layout="responsive"
+              className="w-full"
+            />
+          </div>
           <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
-            {/* Contenedor de corazones flotantes dentro del área de texto */}
-            <div className="absolute inset-0 z-0 pointer-events-none">
+            <h1
+              className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}
+            >
+              MUJER...
+            </h1>
+            <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">
+              🌸 Marzo es nuestro mes 🌸
+            </p>
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+              Porque todas merecemos celebrar nuestra esencia, este mes tienes{" "}
+              <span className="font-bold">25% de descuento</span> en pagos de
+              contado en sesiones para:
+              <br />
+              <span className="font-bold text-[#D4A373]">
+                Emprendedoras, cumpleañeras, profesionales y embarazadas en el
+                estudio. 📸✨
+              </span>
+              <br />
+              ¡Aprovecha todo marzo y paga con descuento!
+            </p>
+
+            <Link href="https://wa.me/+5804129207967" className="mt-6 w-64">
+              <Button
+                bg="#D4A373"
+                title="QUIERO MÁS DETALLES"
+                size="md"
+                shadow={false}
+                border={false}
+                textColor="#fff"
+                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"
+              />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col relative overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
+          <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
+            {/* <div className="absolute inset-0 z-0 pointer-events-none">
               <div
                 className="absolute text-red-500 animate-float"
                 style={{
@@ -174,52 +230,179 @@ export default function Home() {
               >
                 <FaHeart />
               </div>
-            </div>
+            </div> */}
 
             <h1
               className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}
             >
-              Mini Sesiones SAN VALENTÍN 2025
+              Mini Sesiones MAMÁ Y YO 2025
             </h1>
-            <p className="font-bold text-red-700 whitespace-nowrap text-2xl mb-4">
-              ¡Ya el amor está en el aire! ❤️
+            <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">
+              Mamá siempre está detrás de la cámara…
+              <br />
+              ¡Esta vez, le toca brillar a ella! ❤️
             </p>
             <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
-              Este San Valentín, captura momentos inolvidables con quien amas o
-              celebrando la amistad. Un set{" "}
-              <span className="font-bold text-red-700">minimalista</span>{" "}
-              diseñado para risas, abrazos y mucho cariño.
+              Este Día de las Madres, captura momentos llenos de amor y conexión
+              con quienes más quieres. Un set{" "}
+              <span className="font-bold text-[#D4A373]">
+                elegante y sereno
+              </span>
+              , diseñado para abrazos, ternura y recuerdos inolvidables.
             </p>
             <div className="flex flex-col">
               <p className="text-[#a6a6a6]">
+                Pronto tendremos:{" "}
                 <span className="font-extrabold text-red-700">PRE VENTA</span>
                 <br />
-                <span className="text-3xl font-bold"> 20% de Descuento </span>
+                <span className="text-3xl font-bold text-[#D4A373]">
+                  {" "}
+                  25% de Descuento{" "}
+                </span>
               </p>
-              <p className="font-bold text-red-700">HASTA EL 30 DE ENERO</p>
+              <p className="font-bold text-red-700">
+                Desde el 15 de Marzo, hasta el 30 de Abril
+              </p>
             </div>
 
-            <Link href="/miniShoots/valentinesDay" className="mt-6 w-64">
+            <Link href="/miniShoots/mothersDay" className="mt-6 w-64">
               <Button
-                bg="#ff4f41"
+                bg="#D4A373"
                 title="QUIERO MÁS DETALLES"
                 size="md"
                 shadow={false}
                 border={false}
                 textColor="#fff"
-                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#ff4f41]"
+                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"
               />
             </Link>
           </div>
 
           <div className="flex justify-center w-full md:w-1/2">
             <Image
-              src="/birthdayBg.jpg"
+              src="/madre3.jpg"
               alt="Profile"
-              width={100}
-              height={100}
-              className="w-full h-full"
+              width={500}
+              height={500}
+              layout="responsive"
+              className="w-full"
             />
+          </div>
+        </div>
+      </section>
+
+      <section className="flex flex-col relative overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
+          <div className="flex justify-center w-full md:w-1/2">
+            <Image
+              src="/grad.jpeg"
+              alt="Profile"
+              width={500}
+              height={500}
+              layout="responsive"
+              className="w-full"
+            />
+          </div>
+          <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
+            <div className="absolute inset-0 z-0 pointer-events-none">
+              <div
+                className="absolute text-black animate-float"
+                style={{
+                  top: "10%",
+                  left: "5%",
+                  fontSize: "1.5rem",
+                  color: "#f1F1F1",
+                }}
+              >
+                <FaGraduationCap />
+              </div>
+              <div
+                className="absolute text-black animate-float"
+                style={{
+                  top: "5%",
+                  left: "20%",
+                  fontSize: "2rem",
+                  color: "#000000",
+                }}
+              >
+                <FaGraduationCap />
+              </div>
+              <div
+                className="absolute text-black animate-float"
+                style={{
+                  top: "2%",
+                  left: "80%",
+                  fontSize: "2.5rem",
+                  color: "#000000",
+                }}
+              >
+                <FaGraduationCap />
+              </div>
+              <div
+                className="absolute text-[#585353] animate-float"
+                style={{
+                  top: "80%",
+                  left: "60%",
+                  fontSize: "3rem",
+                  color: "#f1F1F1",
+                }}
+              >
+                <FaGraduationCap />
+              </div>
+              <div
+                className="absolute text-black animate-float"
+                style={{
+                  top: "50%",
+                  left: "100%",
+                  fontSize: "1.8rem",
+                  color: "#ff99cc",
+                }}
+              >
+                <FaGraduationCap />
+              </div>
+            </div>
+
+            <h1
+              className={`text-4xl md:text-5xl text-[#441e81] mb-4 ${titleFont.className}`}
+            >
+              GRADUACIONES 2025
+            </h1>
+            <p className="font-bold text-[#441e81] whitespace-nowrap text-2xl mb-4">
+              Su graduación es única,
+              <br />
+              ¡sus recuerdos también deben serlo! ❤️
+            </p>
+            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
+              Este año, capturaremos esa sonrisa de cumplir una meta trazada. Un
+              set <span className="font-bold text-[#441e81]">temático</span>,
+              diseñado especialmente para cada graduando.
+            </p>
+            <div className="flex flex-col">
+              <p className="text-[#a6a6a6]">
+                Pronto tendremos:{" "}
+                <span className="font-extrabold text-red-700">PRE VENTA</span>
+                <br />
+                <span className="text-3xl font-bold text-[#441e81]">
+                  {" "}
+                  25% de Descuento{" "}
+                </span>
+              </p>
+              <p className="font-bold text-red-700">
+                Desde el 30 de Marzo, hasta el 15 de Abril
+              </p>
+            </div>
+
+            <Link href="https://wa.me/+5804129207967" className="mt-6 w-64">
+              <Button
+                bg="#441e81"
+                title="QUIERO MÁS DETALLES"
+                size="md"
+                shadow={false}
+                border={false}
+                textColor="#fff"
+                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"
+              />
+            </Link>
           </div>
         </div>
       </section>

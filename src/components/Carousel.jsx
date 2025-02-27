@@ -50,9 +50,9 @@ const Carousel = ({ images, intervalTime = 3000 }) => {
             <Image
               src={src}
               alt={`Imagen ${index}`}
-              width={350}
-              height={350}
-              className="w-full h-auto"
+              width={500}
+              height={500}
+              className="w-full h-[90%]"
               priority={index === 1}
             />
           </div>
