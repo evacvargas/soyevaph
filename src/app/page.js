@@ -82,7 +82,7 @@ export default function Home() {
 
       <section className="flex bg-[#ffebe7] items-center flex-wrap text-center md:text-left">
         <div className="flex justify-center w-full md:w-1/2">
-          <img src="/profile.jpg" alt="Profile" className="w-full" />
+          <img src="/portada.jpg" alt="Profile" className="w-full" />
         </div>
         <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24">
           <h1
@@ -122,180 +122,180 @@ export default function Home() {
         </div>
       </section>
 
+      {/*<section className="flex flex-col relative overflow-hidden">*/}
+      {/*  <div className="flex flex-col md:flex-row w-full items-center z-10 relative">*/}
+      {/*    <div className="flex justify-center w-full md:w-1/2">*/}
+      {/*      <Image*/}
+      {/*        src="/woman.jpg"*/}
+      {/*        alt="Profile"*/}
+      {/*        width={500}*/}
+      {/*        height={500}*/}
+      {/*        layout="responsive"*/}
+      {/*        className="w-full"*/}
+      {/*      />*/}
+      {/*    </div>*/}
+      {/*    <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">*/}
+      {/*      <h1*/}
+      {/*        className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}*/}
+      {/*      >*/}
+      {/*        MUJER...*/}
+      {/*      </h1>*/}
+      {/*      <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">*/}
+      {/*        🌸 Marzo es nuestro mes 🌸*/}
+      {/*      </p>*/}
+      {/*      <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">*/}
+      {/*        Porque todas merecemos celebrar nuestra esencia, este mes tienes{" "}*/}
+      {/*        <span className="font-bold">25% de descuento</span> en pagos de*/}
+      {/*        contado en sesiones para:*/}
+      {/*        <br />*/}
+      {/*        <span className="font-bold text-[#D4A373]">*/}
+      {/*          Emprendedoras, cumpleañeras, profesionales y embarazadas en el*/}
+      {/*          estudio. 📸✨*/}
+      {/*        </span>*/}
+      {/*        <br />*/}
+      {/*        ¡Aprovecha todo marzo y paga con descuento!*/}
+      {/*      </p>*/}
+
+      {/*      <Link href="https://wa.me/+5804129207967" className="mt-6 w-64">*/}
+      {/*        <Button*/}
+      {/*          bg="#D4A373"*/}
+      {/*          title="QUIERO MÁS DETALLES"*/}
+      {/*          size="md"*/}
+      {/*          shadow={false}*/}
+      {/*          border={false}*/}
+      {/*          textColor="#fff"*/}
+      {/*          className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"*/}
+      {/*        />*/}
+      {/*      </Link>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
+
+      {/*<section className="flex flex-col relative overflow-hidden">*/}
+      {/*  <div className="flex flex-col md:flex-row w-full items-center z-10 relative">*/}
+      {/*    <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">*/}
+      {/*      /!* <div className="absolute inset-0 z-0 pointer-events-none">*/}
+      {/*        <div*/}
+      {/*          className="absolute text-red-500 animate-float"*/}
+      {/*          style={{*/}
+      {/*            top: "10%",*/}
+      {/*            left: "5%",*/}
+      {/*            fontSize: "1.5rem",*/}
+      {/*            color: "#ff0000",*/}
+      {/*          }}*/}
+      {/*        >*/}
+      {/*          <FaHeart />*/}
+      {/*        </div>*/}
+      {/*        <div*/}
+      {/*          className="absolute text-red-500 animate-float"*/}
+      {/*          style={{*/}
+      {/*            top: "5%",*/}
+      {/*            left: "20%",*/}
+      {/*            fontSize: "2rem",*/}
+      {/*            color: "#ff3366",*/}
+      {/*          }}*/}
+      {/*        >*/}
+      {/*          <FaHeart />*/}
+      {/*        </div>*/}
+      {/*        <div*/}
+      {/*          className="absolute text-red-500 animate-float"*/}
+      {/*          style={{*/}
+      {/*            top: "2%",*/}
+      {/*            left: "80%",*/}
+      {/*            fontSize: "2.5rem",*/}
+      {/*            color: "#ff6699",*/}
+      {/*          }}*/}
+      {/*        >*/}
+      {/*          <FaHeart />*/}
+      {/*        </div>*/}
+      {/*        <div*/}
+      {/*          className="absolute text-[#ff4f41] animate-float"*/}
+      {/*          style={{*/}
+      {/*            top: "80%",*/}
+      {/*            left: "60%",*/}
+      {/*            fontSize: "3rem",*/}
+      {/*            color: "#ff6666",*/}
+      {/*          }}*/}
+      {/*        >*/}
+      {/*          <FaHeart />*/}
+      {/*        </div>*/}
+      {/*        <div*/}
+      {/*          className="absolute text-red-500 animate-float"*/}
+      {/*          style={{*/}
+      {/*            top: "50%",*/}
+      {/*            left: "100%",*/}
+      {/*            fontSize: "1.8rem",*/}
+      {/*            color: "#ff99cc",*/}
+      {/*          }}*/}
+      {/*        >*/}
+      {/*          <FaHeart />*/}
+      {/*        </div>*/}
+      {/*      </div> *!/*/}
+
+      {/*      <h1*/}
+      {/*        className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}*/}
+      {/*      >*/}
+      {/*        Mini Sesiones MAMÁ Y YO 2025*/}
+      {/*      </h1>*/}
+      {/*      <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">*/}
+      {/*        Mamá siempre está detrás de la cámara…*/}
+      {/*        <br />*/}
+      {/*        ¡Esta vez, le toca brillar a ella! ❤️*/}
+      {/*      </p>*/}
+      {/*      <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">*/}
+      {/*        Este Día de las Madres, captura momentos llenos de amor y conexión*/}
+      {/*        con quienes más quieres. Un set{" "}*/}
+      {/*        <span className="font-bold text-[#D4A373]">*/}
+      {/*          elegante y sereno*/}
+      {/*        </span>*/}
+      {/*        , diseñado para abrazos, ternura y recuerdos inolvidables.*/}
+      {/*      </p>*/}
+      {/*      <div className="flex flex-col">*/}
+      {/*        <p className="text-[#a6a6a6]">*/}
+      {/*          Pronto tendremos:{" "}*/}
+      {/*          <span className="font-extrabold text-red-700">PRE VENTA</span>*/}
+      {/*          <br />*/}
+      {/*          <span className="text-3xl font-bold text-[#D4A373]">*/}
+      {/*            {" "}*/}
+      {/*            25% de Descuento{" "}*/}
+      {/*          </span>*/}
+      {/*        </p>*/}
+      {/*        <p className="font-bold text-red-700">*/}
+      {/*          Desde el 15 de Marzo, hasta el 30 de Abril*/}
+      {/*        </p>*/}
+      {/*      </div>*/}
+
+      {/*      <Link href="/miniShoots/mothersDay" className="mt-6 w-64">*/}
+      {/*        <Button*/}
+      {/*          bg="#D4A373"*/}
+      {/*          title="QUIERO MÁS DETALLES"*/}
+      {/*          size="md"*/}
+      {/*          shadow={false}*/}
+      {/*          border={false}*/}
+      {/*          textColor="#fff"*/}
+      {/*          className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"*/}
+      {/*        />*/}
+      {/*      </Link>*/}
+      {/*    </div>*/}
+
+      {/*    <div className="flex justify-center w-full md:w-1/2">*/}
+      {/*      <Image*/}
+      {/*        src="/madre3.jpg"*/}
+      {/*        alt="Profile"*/}
+      {/*        width={500}*/}
+      {/*        height={500}*/}
+      {/*        layout="responsive"*/}
+      {/*        className="w-full"*/}
+      {/*      />*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</section>*/}
+
       <section className="flex flex-col relative overflow-hidden">
         <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
           <div className="flex justify-center w-full md:w-1/2">
             <Image
-              src="/woman.jpg"
-              alt="Profile"
-              width={500}
-              height={500}
-              layout="responsive"
-              className="w-full"
-            />
-          </div>
-          <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
-            <h1
-              className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}
-            >
-              MUJER...
-            </h1>
-            <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">
-              🌸 Marzo es nuestro mes 🌸
-            </p>
-            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
-              Porque todas merecemos celebrar nuestra esencia, este mes tienes{" "}
-              <span className="font-bold">25% de descuento</span> en pagos de
-              contado en sesiones para:
-              <br />
-              <span className="font-bold text-[#D4A373]">
-                Emprendedoras, cumpleañeras, profesionales y embarazadas en el
-                estudio. 📸✨
-              </span>
-              <br />
-              ¡Aprovecha todo marzo y paga con descuento!
-            </p>
-
-            <Link href="https://wa.me/+5804129207967" className="mt-6 w-64">
-              <Button
-                bg="#D4A373"
-                title="QUIERO MÁS DETALLES"
-                size="md"
-                shadow={false}
-                border={false}
-                textColor="#fff"
-                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"
-              />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="flex flex-col relative overflow-hidden">
-        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
-          <div className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
-            {/* <div className="absolute inset-0 z-0 pointer-events-none">
-              <div
-                className="absolute text-red-500 animate-float"
-                style={{
-                  top: "10%",
-                  left: "5%",
-                  fontSize: "1.5rem",
-                  color: "#ff0000",
-                }}
-              >
-                <FaHeart />
-              </div>
-              <div
-                className="absolute text-red-500 animate-float"
-                style={{
-                  top: "5%",
-                  left: "20%",
-                  fontSize: "2rem",
-                  color: "#ff3366",
-                }}
-              >
-                <FaHeart />
-              </div>
-              <div
-                className="absolute text-red-500 animate-float"
-                style={{
-                  top: "2%",
-                  left: "80%",
-                  fontSize: "2.5rem",
-                  color: "#ff6699",
-                }}
-              >
-                <FaHeart />
-              </div>
-              <div
-                className="absolute text-[#ff4f41] animate-float"
-                style={{
-                  top: "80%",
-                  left: "60%",
-                  fontSize: "3rem",
-                  color: "#ff6666",
-                }}
-              >
-                <FaHeart />
-              </div>
-              <div
-                className="absolute text-red-500 animate-float"
-                style={{
-                  top: "50%",
-                  left: "100%",
-                  fontSize: "1.8rem",
-                  color: "#ff99cc",
-                }}
-              >
-                <FaHeart />
-              </div>
-            </div> */}
-
-            <h1
-              className={`text-4xl md:text-6xl text-[#323336] mb-4 ${titleFont.className}`}
-            >
-              Mini Sesiones MAMÁ Y YO 2025
-            </h1>
-            <p className="font-bold text-[#D4A373] whitespace-nowrap text-2xl mb-4">
-              Mamá siempre está detrás de la cámara…
-              <br />
-              ¡Esta vez, le toca brillar a ella! ❤️
-            </p>
-            <p className="text-lg md:text-xl text-[#a6a6a6] mb-5">
-              Este Día de las Madres, captura momentos llenos de amor y conexión
-              con quienes más quieres. Un set{" "}
-              <span className="font-bold text-[#D4A373]">
-                elegante y sereno
-              </span>
-              , diseñado para abrazos, ternura y recuerdos inolvidables.
-            </p>
-            <div className="flex flex-col">
-              <p className="text-[#a6a6a6]">
-                Pronto tendremos:{" "}
-                <span className="font-extrabold text-red-700">PRE VENTA</span>
-                <br />
-                <span className="text-3xl font-bold text-[#D4A373]">
-                  {" "}
-                  25% de Descuento{" "}
-                </span>
-              </p>
-              <p className="font-bold text-red-700">
-                Desde el 15 de Marzo, hasta el 30 de Abril
-              </p>
-            </div>
-
-            <Link href="/miniShoots/mothersDay" className="mt-6 w-64">
-              <Button
-                bg="#D4A373"
-                title="QUIERO MÁS DETALLES"
-                size="md"
-                shadow={false}
-                border={false}
-                textColor="#fff"
-                className="transition-transform duration-300 transform hover:scale-105 hover:bg-[#561d199a]"
-              />
-            </Link>
-          </div>
-
-          <div className="flex justify-center w-full md:w-1/2">
-            <Image
-              src="/madre3.jpg"
-              alt="Profile"
-              width={500}
-              height={500}
-              layout="responsive"
-              className="w-full"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="flex flex-col relative overflow-hidden">
-        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
-          <div className="flex justify-center w-full md:w-1/2">
-            <Image
-              src="/grad.jpeg"
+              src="/evaluna-grado.jpg"
               alt="Profile"
               width={500}
               height={500}
@@ -379,16 +379,22 @@ export default function Home() {
             </p>
             <div className="flex flex-col">
               <p className="text-[#a6a6a6]">
-                Pronto tendremos:{" "}
-                <span className="font-extrabold text-red-700">PRE VENTA</span>
+                <span className="font-extrabold text-red-700">EXTENDEMOS</span>
                 <br />
                 <span className="text-3xl font-bold text-[#441e81]">
                   {" "}
-                  25% de Descuento{" "}
+                  Con DESCUENTO{" "}
                 </span>
               </p>
               <p className="font-bold text-red-700">
-                Desde el 30 de Marzo, hasta el 15 de Abril
+                Lo que resta de Junio, Hasta el 31-07...
+              </p>
+
+              <p className="font-bold text-red-700">
+                Antes: 28USD, AHORA: 22USD
+              </p>
+              <p className="font-bold text-[#441e81]">
+                IMPORTANTE: Minimo 5 niños por jornada.
               </p>
             </div>
 
@@ -406,6 +412,58 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="flex flex-col relative overflow-hidden">
+        <div className="flex flex-col md:flex-row w-full items-center z-10 relative">
+          <div  className="flex flex-col justify-center w-full md:w-1/2 p-8 lg:p-24 relative z-10">
+            <h1
+              className={`text-2xl md:text-5xl text-[#441e81] mb-4 ${titleFont.className}`}
+            >
+              JUNIO - JULIO - AGOSTO DE SOPRESAS
+            </h1>
+            <p className="font-bold text-[#441e81] whitespace-nowrap text-2xl mb-4">
+              DESCUENTOS EN SESIONES - EVENTOS
+              <br />
+              <span className="text-xs text-gray-500">Ciertas condiciones aplican</span>
+            </p>
+            <p className="text-lg md:text-xl text-[#FF0080] mb-5">
+              Descuentos para clientes VIP:  ¿ERES UNO?...
+            </p>
+
+            <p className="text-lg md:text-xl text-[#FF0080] mb-5">
+              Obsequios por tu sesión.
+            </p>
+
+            <p className="text-lg md:text-xl text-[#FF0080] mb-5">
+              Y... Mini Sesiones DIA DEL NIÑO: 25USD + Cotillón.
+            </p>
+            <br/>
+            <span className="text-lg md:text-xl text-red-400 mb-5">
+              <Link href="https://wa.me/+5804129207967" className="mt-6 w-64">
+              <Button
+                bg="#FF0080"
+                title="COMUNICATE CONMIGO"
+                size="md"
+                shadow={false}
+                border={false}
+                textColor="#fff"
+              />
+            </Link>
+            </span>
+          </div>
+          <div className="flex justify-center w-full md:w-1/2">
+            <Image
+              src="/promo.jpg"
+              alt="Profile"
+              width={500}
+              height={500}
+              layout="responsive"
+              className="w-full"
+            />
+          </div>
+        </div>
+      </section>
+
 
       <section
         className="relative flex flex-col justify-center 
